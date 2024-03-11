@@ -1,0 +1,35 @@
+div.container p{
+  color: blue;
+}
+
+ul.class li{
+  font-size: 14px;
+}
+
+div.highlight + p {
+  background: yellow;
+}
+
+ul.nav li:first-child{
+  color: red;
+}
+
+div.container2 h2{
+  font-family: Arial;
+}
+
+div.highlight2 span{
+  color: green;
+}
+
+div.container3>div>p{
+  font-weight: bold;
+}
+
+ul.list2 > li{
+  background: gray;
+}
+
+div.container5 p:last-child{
+  color: orange;
+}

@@ -1,0 +1,23 @@
+#main-content span {
+  background: aqua;
+}
+
+.post[data-status=popular] p{
+  background: red;
+}
+
+nav ul li:first-child{
+  background: yellow;
+}
+
+article :first-child{
+  background: violet;
+}
+
+a[href^='#']{
+  text-shadow: 4px 4px 4px blue;
+}
+
+#main-content article+article{
+  color: green;
+}
