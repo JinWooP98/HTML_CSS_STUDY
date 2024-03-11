@@ -1,0 +1,19 @@
+li::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: skyblue;
+  display: inline-block;
+}
+
+li::after{
+  /*
+   -도형을 만드려면 display속성 필수
+   -before, after에는 content속성은 무조건 써야함
+   */
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+}

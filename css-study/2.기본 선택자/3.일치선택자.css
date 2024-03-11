@@ -1,0 +1,14 @@
+li.orange{
+  background: orange;
+}
+span.orange{
+  text-shadow: 2px 2px 2px orange;
+}
+
+li#apple.green{
+  color: yellowgreen;
+}
+
+h1.yellow.low#change.primary{
+  background: violet;
+}

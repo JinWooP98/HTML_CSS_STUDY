@@ -1,0 +1,34 @@
+.orange + li {
+  color: orangered;
+}
+/* 첫번째 tr빼고 전부 */
+tr + tr {
+
+}
+
+li + li {
+  font-style: italic;
+  list-style: none;
+  font-weight: 700;
+  border:1px solid black;
+}
+/* li인데 형들중에 red 인애들 */
+.red ~ li {
+  background: yellow;
+}
+
+/*li인데 바로 형이 red인 애들 */
+.red + li{
+  text-shadow: 2px 2px 2px blue;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.apple #fox, div > div.tiger, .banana{
+  
+}
