@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    /*패딩에 따라 달라지는 박스 사이즈 자동 조절해줌 보통 전체 
+     선택자에 넣어 사용한다.*/
+    .container{
+      width: 500px;
+      height: 500px;
+      background: orange;
+      margin: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      box-sizing: border-box; 
+    }
+    .box{
+      width: 50%;
+      height: 50%;
+      background: tomato;
+      font-size: 1.5em;
+      color: white;
+      /* margin-left: 50px; */
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .card{
+      width: 250px;
+      height: 350px;
+      border: 2px solid gray;
+      margin: 50px auto;
+      border-radius: 15px;
+      box-shadow: 2px 2px 5px 5px #999;
+      padding:  10px 5px 10px 5px;
+    }
+
+    .card .image{
+      border: 2px solid lightgray;
+      height: 250px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    .card .content{
+    }
+
+    .card .image img{
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 카드디자인, 웹사이트에서 많이 쓰임 -->
+  <div class="card">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_GlrURf0of6QYgDTGwXFCpq2dvQzeUljBDw&usqp=CAU" alt="moomin image">
+    </div>
+    <p class="content">
+      무우미인~
+    </p>
+  </div>
+
+
+  <div class="container">
+    <div class="box">안녕안녕</div>
+  </div>
+</body>
+</html>
