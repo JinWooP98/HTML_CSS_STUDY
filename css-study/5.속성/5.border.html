@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+/* border도 설정해주면 사이즈가 변경된다, 따라서 box-sizing: border-box 설정 필요... */
+    .box{
+      width: 150px;
+      height: 150px;
+      background: gray;
+      margin: 10px auto 0;
+    }
+    .box1{
+      background: tomato;
+      /* 선의 굵기 */
+      border-width: 10px;
+      /* 선의 모양 */
+      border-style: solid;
+      /* 선의 색상 */
+      border-color: orange;
+    }
+    .box2{
+      border: solid 10px aqua; /*그냥 생각나는 순서대로 적어주면 됨, 대신 선의 모양은 기본값이 none이므로, 지정을 따로 해주어야 함.*/
+    }
+    .box3{
+      background: greenyellow;
+
+      border-bottom: 4px dashed green;
+      border-left: 4px dotted violet;
+      border-top: 4px solid blue;
+      border-right: 4px double navajowhite;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+</body>
+</html>
