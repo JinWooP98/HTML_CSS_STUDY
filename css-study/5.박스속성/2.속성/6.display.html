@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    #hello{
+      background: red;
+      display: block;
+      width: 300px;
+      height: 200px;
+      /* margin-top: 200px; */
+      padding: 10px;
+    }
+    .click{
+      width: 150px;
+      height: 100px;
+      background: greenyellow;
+    }
+    .click a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 4px solid #000;
+    }
+        /* a태그를 block요소로 만들어 클릭 가능 범위 늘리기 가능 */
+    .box{
+      margin-bottom: 50px;
+    }
+    .box input{
+      height: 40px;
+      display: inline-block;
+    }
+    .box input:nth-child(3){
+      /* 숨겨지고, 자리마저 뺏김. */
+      /* display: none; */
+      /* opacity는 요소를 숨기는 것이 아닌 투명하게 만드는것. */
+      /* opacity: 0.3; */
+      /* 자리 유지하면서 숨기는 것 */
+      visibility: hidden;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <input type="text" class="text" value="1">
+    <input type="text" class="text" value="2">
+    <input type="text" class="text" value="3">
+    <input type="text" class="text" value="4">
+    <input type="text" class="text" value="5">
+  </div>
+  <br>
+  <span id="hello">안뇽안뇽</span>
+
+  <div class="click">
+    <a href="#">click me!</a>
+  </div>
+
+</body>
+</html>
