@@ -1,0 +1,61 @@
+#container{
+  box-sizing: border-box;
+  margin: 50px auto;
+}
+.box{
+  width: 550px;
+  border: 5px double #123456;
+}
+.box1{
+  padding: 15px;
+  text-align: center;
+  background: #abcdef;
+  border-bottom: 5px solid #123456;
+}
+.box2{
+  padding: 10px;
+}
+.box div:nth-child(2){
+  border-bottom: 2px dotted #123456;
+}
+h1{
+  font-weight: bolder;
+  font-size: 1.3em;
+  letter-spacing: 5px;
+}
+h2{
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+p{
+  font-size: 0.85em;
+}
+----
+/* section{
+  width: 550px;
+  border: 3px double #123456;
+  margin: 50px auto;
+}
+section .title{
+  background: #abcdef;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15px 0;
+  border-bottom: 3px solid #123456;
+  letter-spacing: 10px;
+}
+section .content{
+  padding: 10px;
+}
+section .content h2{
+  font-size: 1.2em;
+  font-weight: 700;
+}
+section .content p{
+  margin-top: 10px;
+}
+section .content:last-child{
+  border-top: 3px dotted #123456;
+} */
