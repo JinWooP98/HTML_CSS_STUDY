@@ -1,0 +1,36 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+section{
+  width: 60%;
+  background: rgb(250, 228, 232);
+  border: 4px solid rgba(121, 100, 68, 0.997);
+  font-size: 18px;
+}
+section .title{
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 20px auto 0;
+  text-align: center;
+}
+section .ct{
+  width: 45%;
+  text-align: justify;
+  line-height: 1.3;
+  padding: 15px;
+  float: left;
+  margin: 2%;
+  font-weight: 500;
+}
+section .content1{
+  background: lightgreen;
+  margin-right: 4%;
+}
+section .content2{
+  background: tan;
+}
