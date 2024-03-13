@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ct{
+      width: 700px;
+      padding: 20px;
+      border: 3px solid;
+      margin: 20px;
+    }
+    /* 해제가 필요한 부모한테 붙이기 */
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .container1{
+      border-color: red;
+      /* overflow: hidden; */
+      /* 하지만 이 방법도 정석이 아님. */
+    }
+    .container2{
+      border-color: blue;
+    }
+    .container3{
+      border-color: orange;
+    }
+
+    .box{
+      width: 200px;
+      height: 150px;
+      border: 3px solid green;
+      background: yellowgreen;
+      border-radius: 20px;
+      float: left;
+    }
+    /* .vbox{
+      clear을 해야하지만, 해야할 대상을 강제로 안보이게 추가해서 해결
+      하지만 시멘틱요소에서는 올바르지 않아 하지 마.
+      clear: both;
+    } */
+  </style>
+</head>
+<body>
+  
+  <div class="ct container1 clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- <div class="vbox"></div> -->
+  </div>
+  <div class="ct container2 clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- <div class="vbox"></div> -->
+  </div>
+  <div class="ct container3 clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- <div class="vbox"></div> -->
+  </div>
+
+</body>
+</html>

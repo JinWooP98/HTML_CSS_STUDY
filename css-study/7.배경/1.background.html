@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 550px;
+      height: 350px;
+      border: 4px dashed gray;
+      margin: 50px auto;
+
+      background: orange;
+      /* 사진이 박스의 크기를 넘어가면 오른쪽 위에 맞추고 넘치는 부분은 overflow hidden속성을 가짐 */
+      background-image: url(../../image/sky.jpg);
+      /* 배경 이미지 사이즈 조정 */
+      /* width, height 조절 */
+      background-size: 110px 70px;
+
+      /* 사진이 바둑판처럼 나오는것, 반복되는 것이 싫으면 no-repeat */
+      /* repeat-x x축으로 반복, repeat-y y축으로 반복 */
+      background-repeat: no-repeat;
+
+      /* 배경 이미지 위치 조정 */
+      /* x축 y축 */
+      background-position: 300px center;
+
+      /* 단축속성                         position과 size는 /로 구별 앞이 위치, 뒤가 사이즈*/
+      background: no-repeat red url(../../image/sky.jpg) left center / 200px 70px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
