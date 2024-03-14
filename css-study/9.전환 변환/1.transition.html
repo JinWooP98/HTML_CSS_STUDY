@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;
+      background: red;
+      margin: 50px;
+      /* 가로의 길이와 색을 3초에 걸쳐 변경하겠습니다. */
+      transition-property: all; /*all이 기본값*/
+      /* 걸리는 시간 */
+      transition-duration: 2s;
+      /* 1초뒤에 변경된다 */
+      transition-delay: 900ms;
+      /* 진행속도를 조절하는것, linear === 처음부터 끝까지 같게 */
+      transition-timing-function: linear;
+      /* 순서 상관없는데 초는 앞이 duration delay는 뒤에. */
+      /* transform: all 1s 50ms linear; */
+    }
+    .box:hover{
+      width: 300px;
+      background: greenyellow;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="box"></div>
+
+</body>
+</html>
