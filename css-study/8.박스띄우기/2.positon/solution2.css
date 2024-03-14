@@ -1,0 +1,85 @@
+@import url(../../common.css);
+
+body{
+  background: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  font-family: '굴림', 'Gulim', serif;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+#wrapper header {
+  background: #123456;
+  color: #fff;
+  padding: 10px;
+}
+#wrapper header h1{
+  font-size: 30px;
+  font-weight: 700;
+  color: #cc0;
+  text-align: center;
+  font-family: '휴먼모음T', cursive;
+}
+#wrapper header h1 strong{
+  color: #fff;
+  font-size: 3em;
+}
+#wrapper header h1 span{
+  font-size: 1.5em;
+}
+#wrapper header h1 em{
+  font-size: 2em;
+  color: #ccc;
+}
+/* end header style */
+
+/* begin container style */
+#wrapper .container{
+  background: #ccc;
+  width: 100%;
+}
+#wrapper .container .box{
+  float: left;
+}
+#wrapper .container .menu{
+  width: 20%;
+  padding: 20px;
+}
+#wrapper .container .menu li{
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+#wrapper .container .menu li a:hover{
+  color: #662;
+  border-bottom: 1px dashed yellow;
+}
+#wrapper .container .content{
+  width: 80%;
+  background: #fff;
+}
+#wrapper .container .content h2{
+  background: #800;
+  color: #ee0;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px 20px;
+  font-family: '궁서', 'Gungsea', cursive;
+}
+#wrapper .container .content p {
+  padding: 20px;
+  text-align: justify;
+}
+
+
+/* footer style */
+footer {
+  background: #aaa;
+  padding: 10px 20px;
+}
+footer address {
+  color: #000;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      margin: 100px;
+    }
+    .box{
+      width: 100px;
+      height: 100px; 
+      /* line-height: 100px; 편법 1 line height를 height랑 같게하면 박스내 정중앙에 위치 */
+      background: orange;
+      border: 4px dashed red;
+      font-size: 30px;
+      /* 텍스트 중앙정렬 */
+      text-align: center; /*x축으로만 중앙정렬*/
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*아직 배우지 않았지만 flex를 이용한 텍스트를 박스 정가운데 위치시키는 방법 */
+    }
+
+    .box:nth-child(2){
+      position: absolute; /*어떤 박스든 absolute를 걸면 자리를 뺐긴다. float처럼 뜨는 것. */
+      right: 20px;        /*absolute의 어디를 기준으로 잡고 이동을 하느냐.*/
+      bottom: 30px;
+
+    }
+    /* positon absolute를 써주면 가로 100%가 깨짐, 따라서 다시 수동으로 맞춰줘야함 */
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+</body>
+</html>
