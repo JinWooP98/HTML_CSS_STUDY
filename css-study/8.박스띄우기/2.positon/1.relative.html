@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      margin: 100px;
+    }
+    .box{
+      width: 100px;
+      height: 100px; 
+      /* line-height: 100px; 편법 1 line height를 height랑 같게하면 박스내 정중앙에 위치 */
+      background: orange;
+      border: 4px dashed red;
+      font-size: 30px;
+      /* 텍스트 중앙정렬 */
+      text-align: center; /*x축으로만 중앙정렬*/
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /*아직 배우지 않았지만 flex를 이용한 텍스트를 박스 정가운데 위치시키는 방법 */
+    }
+
+    .box:nth-child(2){
+      position: relative; /* static은 none이랑 같은것, 그냥 포지션 특성을 지우는 것*/
+      left: 50px;        /*relative는 상대적인 것이라, 원래 자리에서 상대적으로 이동, 또한 많이 이동해서 원래 자리에서 크게 벗어나도, 다른 박스들이 이 자리를 뺏지 않음, 자리유지*/
+      top: 30px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+</body>
+</html>
