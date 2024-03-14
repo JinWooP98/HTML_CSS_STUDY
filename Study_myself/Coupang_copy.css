@@ -1,1 +1,70 @@
 @import url(../css-study/common.css);
+
+header {
+  font-size: 12px;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+header .top_bar{
+  background: lightgray;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+header .top_bar .header_menu {
+  float: right;
+}
+header .top_bar .header_menu li{
+  float: left;
+  padding: 10px;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
+header .top_bar .subscribeHeader {
+  float: left;
+}
+header .top_bar .subscribeHeader li {
+  float: left;
+  padding: 10px;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
+header .top_bar .subscribeHeader li:first-child {
+  padding-top: 12px;
+}
+header .top_bar .subscribeHeader li #apply {
+  border: 0 solid #000;
+  height: 16px;
+  width: 6em;
+  float: left;
+  background: lightgray;
+  font-size: 12px;
+}
+header .top_bar .subscribeHeader li #apply option {
+  background: #fff;
+  padding: 20px;
+}
+/* 로고 & 검색창 위 링크메뉴 style end */
+header .main_header {
+  background: #fff;
+  border: 1px solid #000;
+}
+header .main_header .menu_btn {
+  display: block;
+  width: 18%;
+  height: 115px;
+  float: left;
+  background-image: url(https://static.coupangcdn.com/image/coupang/common/pc_header_img_sprite_180104.png);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 80px;
+}
+header .main_header a {
+  
+}
+header .main_header .search_header {
+  float: left;
+  width: 80%;
+}
